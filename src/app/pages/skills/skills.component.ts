@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CurriculumService} from "../../services/curriculum.service";
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  skills:any[] = [];
+
+  constructor(private cvService:CurriculumService) { }
 
   ngOnInit(): void {
+
+
+    this.cvService.getCv().subscribe(data=>{
+      this.skills = data.skills;
+    })
   }
 
 }
