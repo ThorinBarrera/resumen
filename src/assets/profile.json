@@ -1,0 +1,17 @@
+{
+  "about": {
+    "name": "alex",
+    "surname": "vitari",
+    "birthDate": "28-11-1979"
+  },
+  "skills": [
+    {
+      "name":"sleep",
+      "power": 9
+    },
+    {
+      "name":"eat",
+      "power": 7
+    }
+  ]
+}
