@@ -1,12 +1,12 @@
 {
   "about": {
-    "name": "alex",
-    "surname": "vitari",
-    "birthDate": "28-11-1979"
+    "name": "Angel",
+    "surname": "Lladonosa",
+    "birthDate": "09-02-2001"
   },
   "skills": [
     {
-      "name":"sleep",
+      "name":"hardware",
       "power": 9
     },
     {
