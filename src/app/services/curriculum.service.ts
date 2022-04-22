@@ -9,10 +9,10 @@ export class CurriculumService {
   url: string;
 
   constructor(private http:HttpClient) {
-    this.url = 'http://localhost:4200/assets/profile.json'
+    this.url = 'http://localhost:4200/assets'
   }
 
-  getCv(){
-    return this.http.get<any>(this.url);
+  getCv(profile:string = 'profile'){
+    return this.http.get<any>(`${this.url}/${profile}.json`);
   }
 }
